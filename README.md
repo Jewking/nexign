@@ -12,14 +12,14 @@
     private int limit;        - лимит
     private boolean done;     - выпущена / нет
 
-## class History - история транзакций [in development]
+## class History - история транзакций *[in development]
     private int id;                - первичный идентификатор
     private int cardId;            - идентификатор карты
     private int price;             - цена
     private String name;           - Получатель
     private LocalDateTime date;    - дата транзакции
 
-## class Bonus - история начисления бонусов [in development]
+## class Bonus - история начисления бонусов *[in development]
     private int id;                - первичный идентификатор
     private int cardId;            - идентификатор карты
     private int amount;            - количество
