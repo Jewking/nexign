@@ -14,9 +14,17 @@ public final class Cards {
         this.id = cardCounter++;
         this.ownerId = ownerId;
         this.money = 0;
-        this.number = "5500" + String.valueOf(1000 + (Math.random() * 8999)) + String.valueOf(1000 + (Math.random() * 8999)) + String.valueOf(1000 + (Math.random() * 8999));
+        this.number = setRandomCardNumber();
         this.limit = 0;
         this.done = false;
+    }
+
+    private static String setRandomCardNumber() {
+        String cardNumber = "5500";
+        for (int i = 0; i < 3; i++) {
+            cardNumber += String.valueOf((int) (1000 + (Math.random() * 8999)));
+        }
+        return cardNumber;
     }
 
     public int getId() {
