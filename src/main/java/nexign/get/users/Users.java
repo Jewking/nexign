@@ -16,7 +16,7 @@ public final class Users {
         this.dateCreated = LocalDateTime.now();
     }
 
-    private class Card {
+    public class Card {
         private int id;
         private int money;
         private int limit;

@@ -1,8 +1,8 @@
 package nexign.get.users.rest;
 
+import nexign.get.users.Users.Card;
 import nexign.get.users.Users;
 import nexign.get.users.exception.NotFoundException;
-import org.apache.catalina.User;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
