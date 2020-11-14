@@ -4,18 +4,18 @@
     private LocalDateTime dateCreated;    - дата создания
 
 ## get
-### api/users
+#### api/users
 - получение списка всех пользователей
-### api/users/{userId}
+#### api/users/{userId}
 - получение всей информации по пользователю
 
 ## post
-### api/new/user
+#### api/new/user
 - @RequestBody - String {name}
 - создание нового пользователя
 
 ## delete
-### api/user/{userId}
+#### api/user/{userId}
 - удаление пользователя
 
 
