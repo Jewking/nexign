@@ -1,17 +1,31 @@
 # Классы
-## class Users
-    private int id;                       - идентификатор
+## class Users - пользователи
+    private int id;                       - первичный идентификатор
     private String name;                  - имя владельца
     private LocalDateTime dateCreated;    - дата создания
 
-## class Cards
-    private int id;           - идентификатор
+## class Cards - пластиковые карты
+    private int id;           - первичный идентификатор
     private int ownerId;      - владелец
     private String number;    - номера карты
     private int money;        - деньги
     private int limit;        - лимит
     private boolean done;     - выпущена / нет
-    
+
+## class History - история транзакций [in development]
+    private int id;                - первичный идентификатор
+    private int cardId;            - идентификатор карты
+    private int price;             - цена
+    private String name;           - Получатель
+    private LocalDateTime date;    - дата транзакции
+
+## class Bonus - история начисления бонусов [in development]
+    private int id;                - первичный идентификатор
+    private int cardId;            - идентификатор карты
+    private int amount;            - количество
+    private String name;           - за что
+    private LocalDateTime date;    - дата получения
+
 # Запросы
 ## get
 ### api/users
