@@ -4,13 +4,17 @@ public final class Cards {
     public static int cardCounter = 0;
 
     private int id;
+    private int ownerId;
+    private String number;
     private int money;
     private int limit;
     private boolean done;
 
-    public Cards() {
+    public Cards(int ownerId) {
         this.id = cardCounter++;
+        this.ownerId = ownerId;
         this.money = 0;
+        this.number = "5500" + String.valueOf(1000 + (Math.random() * 8999)) + String.valueOf(1000 + (Math.random() * 8999)) + String.valueOf(1000 + (Math.random() * 8999));
         this.limit = 0;
         this.done = false;
     }
@@ -21,6 +25,22 @@ public final class Cards {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
     }
 
     public int getMoney() {

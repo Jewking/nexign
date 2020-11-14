@@ -1,7 +1,6 @@
 package nexign.get.users;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 
 public final class Users {
     public static int userCounter = 0;
