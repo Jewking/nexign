@@ -1,6 +1,6 @@
 package nexign.get.users.rest;
 
-import nexign.get.users.Users.Card;
+import nexign.get.users.Cards;
 import nexign.get.users.Users;
 import nexign.get.users.exception.NotFoundException;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +17,8 @@ class UsersRestController {
             add(new Users("Nastya Lipuchka"));
         }
     };
+
+    Cards cards = new Cards();
 
     private Users getUserID(@PathVariable int id) {
         return users.stream()
