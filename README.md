@@ -1,11 +1,12 @@
 # Документация [v 1.1]
 
-## USERS
+## Классы
+### class Users
     private int id;                       - идентификатор
     private String name;                  - имя владельца
     private LocalDateTime dateCreated;    - дата создания
 
-## CARDS
+### class Cards
     private int id;           - идентификатор
     private int ownerId;      - владелец
     private String number;    - номера карты
@@ -13,38 +14,38 @@
     private int limit;        - лимит
     private boolean done;     - выпущена / нет
     
-    
-## get
-### api/users
+## Запросы
+### get
+#### api/users
 - получение списка всех пользователей
 #### api/cards
 - получение списка всех карт
-### api/users/{userId}
+#### api/users/{userId}
 - получение всей информации по пользователю
-### api/cards/{cardId}
+#### api/cards/{cardId}
 - получение всей информации по карте
 
-## post
-### api/new/user
+### post
+#### api/new/user
 - @RequestBody - String {name}
 - создание нового пользователя
-### api/new/card
+#### api/new/card
 - @RequestBody - int {ownerID}
 - создание новой карты
 
-## put
-### api/changestatus/{cardId}
+### put
+#### api/changestatus/{cardId}
 - @RequestBody - Bool {status}
 - смена статуса карты (готова / нет)
-### api/limitcard/{cardId}
+#### api/limitcard/{cardId}
 - @RequestBody - int {limit}
 - смена лимита карты
-### api/money/{cardId}
+#### api/money/{cardId}
 - @RequestBody - int {money}
 - изменение кол-во денег на карте
 
-## delete
-### api/user/{userId}
+### delete
+#### api/user/{userId}
 - удаление пользователя
-### api/card/{cardId}
+#### api/card/{cardId}
 - удаление карты
