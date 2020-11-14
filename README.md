@@ -19,6 +19,9 @@
 - удаление пользователя
 
 
+
+
+
 # class Cards - пластиковые карты
     private int id;           - первичный идентификатор
     private int ownerId;      - владелец
@@ -54,7 +57,10 @@
 - удаление карты
 
 
-## class History - история транзакций *[in development]*
+
+
+
+# class History - история транзакций *[in development]*
     private int id;                - первичный идентификатор
     private int cardId;            - идентификатор карты
     private int price;             - цена
@@ -78,7 +84,9 @@
 - dev
 
 
-## class Bonus - история начисления бонусов *[in development]*
+
+
+# class Bonus - история начисления бонусов *[in development]*
     private int id;                - первичный идентификатор
     private int cardId;            - идентификатор карты
     private int amount;            - количество
