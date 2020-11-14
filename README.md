@@ -16,7 +16,7 @@
 - @RequestBody - String {name}
 - создание нового пользователя
 ### api/new/card
-@RequestBody - int {ownerID}
+- @RequestBody - int {ownerID}
 - создание новой карты
 
 ## put
