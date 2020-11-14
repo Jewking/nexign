@@ -13,7 +13,7 @@
 
 ## post
 ### api/new/user
-@RequestBody - String {name}
+- @RequestBody - String {name}
 - создание нового пользователя
 ### api/new/card
 @RequestBody - int {ownerID}
@@ -21,13 +21,13 @@
 
 ## put
 ### api/changestatus/{cardId}
-@RequestBody - Bool {status}
+- @RequestBody - Bool {status}
 - смена статуса карты (готова / нет)
 ### api/limitcard/{cardId}
-@RequestBody - int {limit}
+- @RequestBody - int {limit}
 - смена лимита карты
 ### api/money/{cardId}
-@RequestBody - int {money}
+- @RequestBody - int {money}
 - изменение кол-во денег на карте
 
 ## delete
