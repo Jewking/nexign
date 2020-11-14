@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 @RestController
 @RequestMapping("api")
 class UsersRestController {
-    protected ArrayList<Users> users = new ArrayList<Users>() {
+    private ArrayList<Users> users = new ArrayList<Users>() {
         {
             add(new Users("Arslan Gareev"));
             add(new Users("Leonid Rakitin"));
@@ -19,7 +19,7 @@ class UsersRestController {
         }
     };
 
-    protected ArrayList<Cards> cards = new ArrayList<Cards>() {
+    private ArrayList<Cards> cards = new ArrayList<Cards>() {
         {
             add(new Cards(0));
             add(new Cards(0));
