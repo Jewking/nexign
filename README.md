@@ -1,6 +1,19 @@
-# Документация
-[v 1.0]
+# Документация [v 1.1]
 
+## USERS
+    private int id;                       - идентификатор
+    private String name;                  - имя владельца
+    private LocalDateTime dateCreated;    - дата создания
+
+## CARDS
+    private int id;           - идентификатор
+    private int ownerId;      - владелец
+    private String number;    - номера карты
+    private int money;        - деньги
+    private int limit;        - лимит
+    private boolean done;     - выпущена / нет
+    
+    
 ## get
 ### api/users
 - получение списка всех пользователей
