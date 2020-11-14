@@ -1,4 +1,4 @@
-## class Users - пользователи
+# class Users - пользователи
     private int id;                       - первичный идентификатор
     private String name;                  - имя владельца
     private LocalDateTime dateCreated;    - дата создания
@@ -19,7 +19,7 @@
 - удаление пользователя
 
 
-## class Cards - пластиковые карты
+# class Cards - пластиковые карты
     private int id;           - первичный идентификатор
     private int ownerId;      - владелец
     private String number;    - номера карты
