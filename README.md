@@ -3,18 +3,18 @@
     private String name;                  - имя владельца
     private LocalDateTime dateCreated;    - дата создания
 
-## get
+## GET
 #### api/users
 - получение списка всех пользователей
 #### api/users/{userId}
 - получение всей информации по пользователю
 
-## post
+## POST
 #### api/new/user
 - @RequestBody - String {name}
 - создание нового пользователя
 
-## delete
+## DELETE
 #### api/user/{userId}
 - удаление пользователя
 
@@ -27,30 +27,30 @@
     private int limit;        - лимит
     private boolean done;     - выпущена / нет
     
-## get
-### api/cards
+## GET
+#### api/cards
 - получение списка всех карт
-### api/cards/{cardId}
+#### api/cards/{cardId}
 - получение всей информации по карте
 
-## post
-### api/new/card
+## POST
+#### api/new/card
 - @RequestBody - int {ownerID}
 - создание новой карты
 
-## put
-### api/changestatus/{cardId}
+## PUT
+#### api/changestatus/{cardId}
 - @RequestBody - Bool {status}
 - смена статуса карты (готова / нет)
-### api/limitcard/{cardId}
+#### api/limitcard/{cardId}
 - @RequestBody - int {limit}
 - смена лимита карты
-### api/money/{cardId}
+#### api/money/{cardId}
 - @RequestBody - int {money}
 - изменение кол-во денег на карте
 
-## delete
-### api/card/{cardId}
+## DELETE
+#### api/card/{cardId}
 - удаление карты
 
 
@@ -61,16 +61,20 @@
     private String name;           - Получатель
     private LocalDateTime date;    - дата транзакции
     
-## get
+## GET
+#### dev
 - dev
 
-## post
+## POST
+#### dev
 - dev
 
-## put
+## PUT
+#### dev
 - dev
 
-## delete
+## DELETE
+#### dev
 - dev
 
 
@@ -81,14 +85,18 @@
     private String name;           - за что
     private LocalDateTime date;    - дата получения
 
-## get
+## GET
+#### dev
 - dev
 
-## post
+## POST
+#### dev
 - dev
 
-## put
+## PUT
+#### dev
 - dev
 
-## delete
+## DELETE
+#### dev
 - dev
