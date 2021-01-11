@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f8199b7d-0901-4f1e-9f63-72d36f165726" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nexign/get/users/rest/UsersRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nexign/get/users/rest/UsersRestController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
