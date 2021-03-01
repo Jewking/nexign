@@ -6,30 +6,28 @@ import nexign.get.users.exception.NotFoundException;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Stream;
 
 @RestController
 @RequestMapping("api")
 class UsersRestController {
-    private ArrayList<Users> users = new ArrayList<Users>() {
-        {
-            add(new Users("Arslan Gareev"));
-            add(new Users("Leonid Rakitin"));
-            add(new Users("Nastya Lipuchka"));
-        }
-    };
+    private List<Users> users = new ArrayList<>(Arrays.asList(
+            new Users("Arslan Gareev"),
+            new Users("Leonid Rakitin"),
+            new Users("Nastya Lipuchka")
+    ));
 
-    private ArrayList<Cards> cards = new ArrayList<Cards>() {
-        {
-            add(new Cards(0));
-            add(new Cards(0));
-            add(new Cards(0));
-            add(new Cards(1));
-            add(new Cards(1));
-            add(new Cards(1));
-            add(new Cards(2));
-        }
-    };
+    private List<Cards> cards = new ArrayList<>(Arrays.asList(
+            new Cards(0),
+            new Cards(0),
+            new Cards(0),
+            new Cards(1),
+            new Cards(1),
+            new Cards(1),
+            new Cards(2)
+    ));
 
     private Cards getUserCardsID(@PathVariable int id) {
         return cards.stream()
@@ -62,12 +60,12 @@ class UsersRestController {
     }
 
     @GetMapping("users")
-    public ArrayList<Users> listUsers () {
+    public List<Users> listUsers () {
         return users;
     }
 
     @GetMapping("cards")
-    public ArrayList<Cards> listCards () {
+    public List<Cards> listCards () {
         return cards;
     }
 
